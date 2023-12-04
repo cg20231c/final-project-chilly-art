@@ -20,5 +20,5 @@ Taking inspiration from Garry's Mod's Gravity Gun, we decided to showcase some o
 
 ## Credits
 1. Awan: basically everything
-2. Ali: control for Features #1 and #2 but with smartphone's gyroscope sensor
+2. Ali: control for Features #1 and #2 but with mpu-6050 via serial communication using microcontroller
 3. Hisan: feature on Features #5 and making the repository alive
