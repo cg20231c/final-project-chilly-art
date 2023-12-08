@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO.Ports;
 using System.Threading;
 
-public class GyroController : MonoBehaviour
+public class Controller : MonoBehaviour
 {
     // Having data sent and recieved in a seperate thread to the main game thread stops unity from freezing
     Thread IOThread = new Thread(DataThread);
@@ -40,7 +40,7 @@ public class GyroController : MonoBehaviour
             }
 
             incomingMsg = sp.ReadExisting();
-            Thread.Sleep(200);
+            Thread.Sleep(10);
         }
     }
 
@@ -88,11 +88,11 @@ public class GyroController : MonoBehaviour
     {
         // Adjust camera rotation based on gyro values
         float rotationX = -gyroY * 0;
-        float rotationY = -gyroX * 0.01f;
-        float rotationZ = -gyroZ * 0;
+        float rotationY = -gyroX * 0.05f;
+        float rotationZ = gyroZ * 0.01f;
 
         // Apply rotation to the camera
-        transform.Rotate(rotationX, rotationY, rotationZ);
+        transform.Rotate(rotationZ, rotationY, rotationX);
     }
 
     }
