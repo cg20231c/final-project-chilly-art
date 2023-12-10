@@ -30,3 +30,6 @@ Taking inspiration from Garry's Mod's Gravity Gun, we decided to showcase some o
 1. Dimas: basically everything
 2. Ali: control for Features #1 and #2 but with mpu-6050 via serial communication using microcontroller
 3. Hisan: feature on Features #5 and making the repository alive
+
+
+[UNDUH PROYEK DI SINI](https://drive.google.com/file/d/1rQ9k-zqKgRNqDVSzTYNVfLOni8lFcwAR/view?usp=sharing)
